@@ -1,15 +1,10 @@
 body {
-  background-color: #C1CCCA ;
-  color: black;
+  background-color: #252d2c ;
+  color: rgb(230, 223, 223);
   margin: 30px;
   font: 30px "Century Gothic", Futura, sans-serif;
 }
 
-.game {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 .boardRow {
   display: flex;
   flex-flow: row nowrap;
@@ -17,10 +12,20 @@ body {
 .square {
   background-color: #444;
   color: white;
-  border: 2px solid #999999;
+  border: 2px solid #999;
   padding: 0;
   font-size: 80px;
   text-align: center;
   width: 100px;
   height: 100px;
+}
+
+.square:focus{
+  outline: none;
+  background-color: #222;
+}
+
+.status {
+  margin: 20px;
+  font-size: 24px;
 }
